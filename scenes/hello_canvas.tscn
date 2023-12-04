@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://cwrxtsrnjoj84"]
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_2qei0"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Sprite2D2" type="Sprite2D" parent="."]
+position = Vector2(562.25, 332.75)
+scale = Vector2(837.5, 542.5)
+texture = SubResource("CanvasTexture_2qei0")
