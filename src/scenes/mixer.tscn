@@ -1,0 +1,24 @@
+[gd_scene load_steps=4 format=3 uid="uid://dq7k42pthqvam"]
+
+[ext_resource type="Texture2D" uid="uid://bk07getkatbso" path="res://art/ghost_16x16.png" id="1_61rfa"]
+[ext_resource type="Script" path="res://scripts/mixer.gd" id="1_ylf5o"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xasjo"]
+size = Vector2(16, 16)
+
+[node name="mixer" type="Node2D"]
+position = Vector2(204, 150)
+scale = Vector2(5, 5)
+script = ExtResource("1_ylf5o")
+
+[node name="mixer_area" type="Area2D" parent="."]
+
+[node name="sprite" type="Sprite2D" parent="mixer_area"]
+texture_filter = 1
+texture = ExtResource("1_61rfa")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="mixer_area"]
+shape = SubResource("RectangleShape2D_xasjo")
+
+[connection signal="mouse_entered" from="mixer_area" to="." method="_on_mixer_area_mouse_entered"]
+[connection signal="mouse_exited" from="mixer_area" to="." method="_on_mixer_area_mouse_exited"]

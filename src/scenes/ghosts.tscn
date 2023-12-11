@@ -1,0 +1,12 @@
+[gd_scene load_steps=2 format=3 uid="uid://b2e2bv4oywtfv"]
+
+[ext_resource type="TileSet" uid="uid://dqj04om4wyt4j" path="res://tile_sets/tile_set_ghosts.tres" id="1_yq6uk"]
+
+[node name="ghosts" type="Node2D"]
+
+[node name="TileMap_ghosts" type="TileMap" parent="."]
+texture_filter = 1
+tile_set = ExtResource("1_yq6uk")
+cell_quadrant_size = 64
+format = 2
+layer_0/tile_data = PackedInt32Array(0, 2, 0, 65538, 2, 0, 131074, 2, 0, 131075, 2, 0, 131076, 2, 0, 131077, 2, 0)
