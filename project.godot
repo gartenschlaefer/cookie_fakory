@@ -11,10 +11,27 @@ config_version=5
 [application]
 
 config/name="cookie_fakory"
+run/main_scene="res://scenes/hello_canvas.tscn"
 config/features=PackedStringArray("4.2", "GL Compatibility")
 config/icon="res://icon.svg"
+
+[display]
+
+window/size/viewport_width=320
+window/size/viewport_height=240
+window/stretch/mode="canvas_items"
+window/stretch/scale=3.0
+window/stretch/scale_mode="integer"
+
+[gui]
+
+fonts/dynamic_fonts/use_oversampling=false
 
 [rendering]
 
 renderer/rendering_method="gl_compatibility"
 renderer/rendering_method.mobile="gl_compatibility"
+textures/default_filters/anisotropic_filtering_level=0
+textures/decals/filter=1
+textures/light_projectors/filter=1
+2d/snap/snap_2d_vertices_to_pixel=true
