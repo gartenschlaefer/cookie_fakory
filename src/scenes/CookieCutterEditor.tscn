@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://c5ruj0wetlb8l"]
+
+[ext_resource type="Script" path="res://scripts/CookieCutterEditor.gd" id="1_ij31n"]
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_icf43"]
+
+[node name="CookieCutterEditor" type="Node2D"]
+material = SubResource("CanvasItemMaterial_icf43")
+script = ExtResource("1_ij31n")
