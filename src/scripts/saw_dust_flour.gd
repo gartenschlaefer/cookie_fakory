@@ -1,6 +1,6 @@
 extends RigidBody2D
 
-var follow_mouse = true
+@export var follow_mouse = true
 var mouse_pos = Vector2(0, 0)
 var mouse_vel = Vector2(0, 0)
 
