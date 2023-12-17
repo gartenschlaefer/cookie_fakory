@@ -1,10 +1,9 @@
-[gd_scene load_steps=2 format=3 uid="uid://cwrxtsrnjoj84"]
+[gd_scene load_steps=3 format=3 uid="uid://cwrxtsrnjoj84"]
 
-[sub_resource type="CanvasTexture" id="CanvasTexture_2qei0"]
+[ext_resource type="Script" path="res://scenes/DrawTest.gd" id="1_x5qdx"]
 
-[node name="Node2D" type="Node2D"]
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_icf43"]
 
-[node name="Sprite2D2" type="Sprite2D" parent="."]
-position = Vector2(562.25, 332.75)
-scale = Vector2(837.5, 542.5)
-texture = SubResource("CanvasTexture_2qei0")
+[node name="DrawTest" type="Node2D"]
+material = SubResource("CanvasItemMaterial_icf43")
+script = ExtResource("1_x5qdx")

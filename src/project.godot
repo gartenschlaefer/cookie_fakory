@@ -23,3 +23,7 @@ Enums="*res://scripts/enums.gd"
 
 renderer/rendering_method="gl_compatibility"
 renderer/rendering_method.mobile="gl_compatibility"
+textures/default_filters/anisotropic_filtering_level=0
+textures/decals/filter=1
+textures/light_projectors/filter=1
+2d/snap/snap_2d_vertices_to_pixel=true
