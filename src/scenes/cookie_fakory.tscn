@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://wdrm1vka1p0p"]
+
+[ext_resource type="Script" path="res://scripts/cookie_fakory.gd" id="1_avwht"]
+[ext_resource type="PackedScene" uid="uid://b2e2bv4oywtfv" path="res://scenes/ghosts.tscn" id="2_jml8n"]
+
+[node name="Node" type="Node"]
+script = ExtResource("1_avwht")
+
+[node name="world" type="Node2D" parent="."]
+
+[node name="ghosts" parent="world" instance=ExtResource("2_jml8n")]
+
+[node name="gui" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
