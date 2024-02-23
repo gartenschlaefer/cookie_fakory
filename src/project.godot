@@ -12,12 +12,18 @@ config_version=5
 
 config/name="cookie_fakory"
 run/main_scene="res://scenes/cookie_fakory.tscn"
-config/features=PackedStringArray("4.1", "GL Compatibility")
+config/features=PackedStringArray("4.2", "GL Compatibility")
 config/icon="res://icon.svg"
 
 [autoload]
 
 Enums="*res://scripts/enums.gd"
+
+[display]
+
+window/stretch/mode="canvas_items"
+window/stretch/scale=3.0
+window/stretch/scale_mode="integer"
 
 [rendering]
 
